@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Daniela Santos</title>
+    <!-- <link rel="stylesheet" href="style2/navbar.css"> -->
+    <link id = "mainstyle" rel="stylesheet" href="style2/projects.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="s">
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn" id="no"><i class="fa fa-bars"></i></label>
+    <div class="mainlogo">
+        <a href="index.html"><span class="letter">DS</span></a>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="other.html">OTHER</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="service.html">SERVICE</a></li>
+            <li><a href="qualifications.html">QUALIFICATIONS</a></li>   
+            <li><a href="index.html">HOME</a></li>
+        </ul>
+    </div>
+    <div class="space">
+
+    </div>
+
+    <div class = "header" id = "hed">
+        <h1>PROJECTS</h1>
+    </div>
+
+    <div class = "cards">
+
+        <div class="r1">
+            <figure class="c1 box-down">
+                <figcaption>
+                <h2 class="projectheader">Safe<span>Streets</span></h2>
+                <p class="projecttext">Used Google Maps API to develop interactive map to output safest route between two points based on 
+                    governmental crime databases. Creted the front end and won third place at TAMU Hack 2022.</p>
+                <div class="logos">
+                    <img class = "logoitem" src="Logos/js.png">
+                    <img class = "logoitem" src="Logos/html.png">
+                </div>
+                </figcaption><img src="Logos/map.png" class="projectimage" />
+                <div class="Company">TAMU Hack 2022</div>
+            </figure>
+
+
+            <figure class="c2 box-up">
+                <figcaption>
+                <h2 class="projectheader">Data <span>Analytics</span></h2>
+                <p class="projecttext">Developed machine learning algorithm to reduce processing time of data upload to server by
+                    65% for company that manages over 10 million costumers per year. Improved probability of high-quality data and established more professional data validation
+                    standards.</p>
+                <div class="logos">
+                    <img class = "logoitem" src="Logos/python.jpg">
+                    <img class = "logoitem" src="Logos/sql1.png">
+                </div>
+                </figcaption><img src="Logos/da.jpg" class = "projectimage" />
+                <div class="Company">Summer 2022 Internship</div>
+            </figure>
+
+            <figure class="c1 box-down">
+                <figcaption>
+                <h2 class="projectheader">User <span>Interface</span></h2>
+                <p class="projecttext">Developed Python User Interface for research study. The UI was compatible with Raspberry Pi 
+                    and gathered information in Firebase database for researchers to be able to track information in real time.</p>
+                <div class="logos">
+                    <img class = "logoitem" src="Logos/python.jpg">
+                </div>
+                </figcaption><img src="Logos/rp.jpg" class="projectimage" />
+                <div class="Company">Undergraduate Research at TAMU<div>
+            </figure>
+        </div>
+
+        <div class="r2">
+            <figure class="c2 box-up">
+                <figcaption>
+                <h2 class="projectheader">Safe<span>Bets</span></h2>
+                <p class="projecttext">Created server and database for social media aprojecttext aimed for young investors. Developpedd responsive website using
+                    React.js Google Authentication to enable secure user login.</p>
+                <div class="logos">
+                    <img class = "logoitem" src="Logos/html.png">
+                    <img class = "logoitem" src="Logos/js.png">
+                    <img class = "logoitem" src="Logos/python.jpg">
+                </div>
+                </figcaption><img src="Logos/safebets.jpg" class="projectimage"/>
+                <div class="Company">Hacklahoma 2022</div>
+            </figure>
+        </div>
+    </div>
+   
+
+    <footer class="socials">
+        <a href="https://www.linkedin.com/in/daniela-santos-/" class="fa fa-linkedin" id = "sl"></a>
+        <a href="https://github.com/danielasantos21" class="fa fa-github" id = "sl"></a>
+        <a href="mailto:dsantos21@tamu.edu" class="fa fa-envelope" id = "sl"></a>
+        <div class="toggle">
+            <button id= "sl" onclick="toggleStyleSheet()" type="button"><span class="buttontext">change<br>style</span></button>
+        </div>
+        <script src="functions.js"></script>
+    </footer>
+    
+</body>
+</html>

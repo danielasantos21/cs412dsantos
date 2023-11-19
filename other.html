@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Belgian Soccer Team</title>
+  <style>
+    body {
+      background-color: rgb(240, 237, 238);
+      font-family: cursive;
+      text-align: center;
+    }
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+.header {
+  background-color: rgb(162, 59, 114);
+  color: rgb(240, 237, 238);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.header a {
+  color: rgb(240, 237, 238);
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: rgb(203, 185, 195);
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header i {
+  font-size: 32px;
+  margin-right: 20px;
+}
+
+.players {
+  background-color: rgb(72, 67, 76);
+  color: rgb(240, 237, 238);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.players h2 {
+  margin: 0;
+}
+
+.players a {
+  color: rgb(240, 237, 238);
+  text-decoration: none;
+}
+  </style>
+</head>
+<body>
+  <div class="header">
+    <i class="fas fa-laptop-code"></i>
+    <h1>This is my Chat GPT page.</h1>
+    <div>
+      <a href="index.html">Home</a> |
+      <a href="projects.html">Projects</a>
+    </div>
+  </div>
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      var belgium = {lat: 50.5039, lng: 4.4699};
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 8, center: belgium});
+      var marker = new google.maps.Marker({position: belgium, map: map});
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbzmTH49s55gVZsAunlI97EmtyFCSLokY&callback=initMap">
+  </script>
+  <div class="players">
+    <h2>I told Chat GPT to....</h2>
+    <p>create a html webpage with a google maps api enbeded that shows Belgium. Add text "This is my Chat GPT page." 
+       Add a computer icon and add navigation bar at top right corner with links to projects.html and <home class="html"></home> 
+       that changes color when hovering. Add header "I told Chat GPT to...." and text with these instructions. 
+        Add title "Belgian soccer team" and
+        add the names of all soccer players of Belgian national team linked to their wikipedia page. 
+
+
+      Use colors
+      rgb(203, 185, 195), rgb(162, 59, 114), rgb(240, 237, 238), rgb(72, 67, 76) and cursive font.</p>
+    <h2>Belgian Soccer Players</h2>
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Thibaut_Courtois">Thibaut Courtois</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Simon_Mignolet">Simon Mignolet</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Koen_Casteels">Koen Casteels</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Toby_Alderweireld">Toby Alderweireld</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Jan_Vertonghen">Jan Vertonghen</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Thomas_Meunier">Thomas Meunier</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Dedryck_Boyata">Dedryck Boyata</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Leander_Dendoncker">Leander Dendoncker</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Youri_Tielemans">Youri Tielemans</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Axel_Witsel">Axel Witsel</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Eden_Hazard">Eden Hazard</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Kevin_De_Bruyne">Kevin De Bruyne</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Dries_Mertens">Dries Mertens</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Yannick_Carrasco">Yannick Carrasco</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Adnan_Januzaj">Adnan Januzaj</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Michy_Batshuayi">Michy Batshuayi</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Romelu_Lukaku">Romelu Lukaku</a></li>
+      </ul>
+    </div>
+  </div></body></html>

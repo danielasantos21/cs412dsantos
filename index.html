@@ -1,37 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is the new page title </title>
-    <!-- Add any additional meta tags, link to stylesheets, or scripts here -->
+    <title>Daniela Santos</title>
+    <!-- <link id = "navbarstyle" rel="stylesheet"  href="style2/navbar.css"> -->
+    <link id = "mainstyle" rel="stylesheet" href="style2/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
+    <video autoplay muted loop id="myVideo">
+        <source src="background.mp4" type="video/mp4">
+    </video>
 
-    <header>
-        <h1>Your Website Title</h1>
-        <!-- Add navigation, logo, or any other header content here -->
-    </header>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><i class="fa fa-bars"></i></label>
+      
 
-    <main>
-        <section>
-            <h2>Section 1</h2>
-            <p>This is a paragraph in section 1.</p>
-        </section>
+    <div class="mainlogo">
+        <a href="index.html"><span class="letter">DS</span></a>
+    </div>
+    <script src="functions.js"></script>
 
-        <section>
-            <h2>Section 2</h2>
-            <p>This is another paragraph in section 2.</p>
-        </section>
+    <div class="navbar">
+        <ul>
+            <li><a href="other.html">OTHER</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="service.html">SERVICE</a></li>
+            <li><a href="qualifications.html">QUALIFICATIONS</a></li>   
+            <li><a href="index.html">HOME</a></li>
+        </ul>
+    </div>
 
-        <!-- Add more sections or content as needed -->
+    <div class="text-wrapper">
+        <h1>Hi, I'm Daniela Santos</h1>
+    </div>
 
-    </main>
+    <div class="button-wrapper">
+        <a href="#content"><i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
+    </div>
 
-    <footer>
-        <p>&copy; 2023 Your Website Name. All rights reserved.</p>
-        <!-- Add footer content, links, or copyright information here -->
+    <div class= "hcontent" id="content">
+        <div class="t">
+            <h3>About</h3>
+            <div class="container_content_inner">
+                <h1 class="text">Hello World!</h1>
+                <p class="hp">
+                    I am an honors computer science student at Texas A&M with an interest in cybersecurity, and this summer I 
+                    will be a software developper intern at Paycom. I was born in Mexico City and lived there until I
+                    moved to Dallas at fifteen where I became a runner. Outside of school, I love cooking new reciepies, skkiing, and traveling. So far I have visited forty countries, 
+                    but I hope to visit all of them.
+                </p>
+            </div>
+        </div>
+        <div class="img_container">
+            <img class = "gimg" src="grad picture.jpg">  
+        </div>
+    </div>
+
+    <footer class="socials">
+        <a href="https://www.linkedin.com/in/daniela-santos-/" class="fa fa-linkedin" id = "sl"></a>
+        <a href="https://github.com/danielasantos21" class="fa fa-github" id = "sl"></a>
+        <a href="mailto:dsantos21@tamu.edu" class="fa fa-envelope" id = "sl"></a>
+        <div class="toggle">
+            <button id= "sl" onclick="toggleStyleSheet()" type="button"><span class="buttontext">change<br>style</span></button>
+        </div>
     </footer>
-
+    
 </body>
 </html>
